@@ -1,0 +1,76 @@
+.ImagesAnalysed,
+.ImagesNotAnalysed {
+  height: 100%;
+}
+
+.ImagesAnalysed,
+.ImagesAnalysedContainer,
+.imgViewsContainer,
+.imgViewsBlock,
+.ImagesNotAnalysed,
+.NotAnalysedContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgViewsContainer,
+.AnalysedContainer,
+.NotAnalysedContainer {
+  padding: 1rem;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.imgViewsContainer {
+  border: 1px solid #7c3aed;
+  background-color: #ede9fe;
+  color: #7c3aed;
+}
+
+.NotAnalysedContainer {
+  border: 1px solid #2563eb;
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.NotAnalysedContainer {
+  color: #b45309;
+  border: 1px solid #b45309;
+  background-color: #fef3c7;
+}
+
+.ImgsNum,
+.imgViews,
+.NoImgsNum {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.imgViewsBlock {
+  flex-direction: column;
+}
+
+.imgTitle {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  display: block;
+}
+
+.totalJobViewsGrid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  padding: 0;
+}
+
+.tileLayout {
+  width: 100%;
+}
+
+.dashboardAside {
+  width: 15rem;
+}

@@ -1,0 +1,8 @@
+INITVECTOR = hNhPs2Z5UM2OSEFV
+SECURITYKEY = 7OCK32X80BheN67EZs03bMLClFSWwjDB
+ALGORITHM = aes-256-cbc
+SSH_host =  172.16.111.208
+SSH_user =  divya
+SSH_privatekey = C:\Users\divya\.ssh\id_rsa
+SSH_passphrase = mizzou
+

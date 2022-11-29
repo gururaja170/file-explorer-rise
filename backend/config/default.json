@@ -1,0 +1,4 @@
+{
+    "dbURL" : "mongodb://localhost/rise",
+    "jwtPrivateKey" : "risejwtprivatekey"
+}
