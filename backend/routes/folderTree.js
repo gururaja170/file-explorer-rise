@@ -22,6 +22,7 @@ router.get('/:id', async (req, res) => {
     const folderTree = await FolderTree.findOne();
     switch (user.role) {
       case 'admin':
+        folderTree.module = 'Administrator';
         return res.json(folderTree);
       case 'researcher':
         folderTree.module = 'Researcher';

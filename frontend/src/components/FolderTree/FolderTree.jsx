@@ -119,16 +119,18 @@ const FolderTree = ({
   const updateTree = async (newTree) => {
     const prevTree = tree;
     setTree((oldTree) => ({ ...oldTree, ...newTree }));
-    try {
-      if (newTree && Object.keys(newTree).length) {
-        await updateFolderTree({
-          id: newTree._id,
-          tree: _.cloneDeep(newTree),
-        });
+    if (isAdmin) {
+      try {
+        if (newTree && Object.keys(newTree).length) {
+          await updateFolderTree({
+            id: newTree._id,
+            tree: _.cloneDeep(newTree),
+          });
+        }
+      } catch (error) {
+        alert('Something Unexpected Happened');
+        setTree((oldTree) => ({ ...oldTree, ...prevTree }));
       }
-    } catch (error) {
-      alert('Something Unexpected Happened');
-      setTree((oldTree) => ({ ...oldTree, ...prevTree }));
     }
   };
   /*===============EVENT HANDLERS ENDS========================== */
